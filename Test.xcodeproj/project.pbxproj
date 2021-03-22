@@ -13,6 +13,8 @@
 		CA6C93582606362F002A2111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA6C93562606362F002A2111 /* Main.storyboard */; };
 		CA6C935A26063631002A2111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6C935926063631002A2111 /* Assets.xcassets */; };
 		CA6C935D26063631002A2111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA6C935B26063631002A2111 /* LaunchScreen.storyboard */; };
+		CAE3651426063AFE00665B8D /* UpgradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE3651326063AFE00665B8D /* UpgradeViewController.swift */; };
+		CAE36518260642F700665B8D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE36517260642F700665B8D /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		CA6C935926063631002A2111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA6C935C26063631002A2111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA6C935E26063631002A2111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CABE01C226064EB20064526E /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		CAE3651326063AFE00665B8D /* UpgradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeViewController.swift; sourceTree = "<group>"; };
+		CAE36517260642F700665B8D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE36518260642F700665B8D /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 			children = (
 				CA6C934F2606362F002A2111 /* Test */,
 				CA6C934E2606362F002A2111 /* Products */,
+				CAE36516260642F700665B8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +67,21 @@
 				CA6C93522606362F002A2111 /* SceneDelegate.swift */,
 				CA6C93542606362F002A2111 /* ViewController.swift */,
 				CA6C93562606362F002A2111 /* Main.storyboard */,
+				CAE3651326063AFE00665B8D /* UpgradeViewController.swift */,
+				CABE01C226064EB20064526E /* Configuration.storekit */,
 				CA6C935926063631002A2111 /* Assets.xcassets */,
 				CA6C935B26063631002A2111 /* LaunchScreen.storyboard */,
 				CA6C935E26063631002A2111 /* Info.plist */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		CAE36516260642F700665B8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAE36517260642F700665B8D /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA6C93552606362F002A2111 /* ViewController.swift in Sources */,
+				CAE3651426063AFE00665B8D /* UpgradeViewController.swift in Sources */,
 				CA6C93512606362F002A2111 /* AppDelegate.swift in Sources */,
 				CA6C93532606362F002A2111 /* SceneDelegate.swift in Sources */,
 			);
@@ -293,10 +311,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.isayilmaz.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isayilmaz.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,10 +330,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.isayilmaz.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isayilmaz.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
